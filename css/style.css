@@ -1,0 +1,130 @@
+:root {
+  --first_color: #2b292c;
+  --second_bg_color: #0f3460;
+  --colortwo: #ece7e1;
+  --colorthree: #fde9df;
+  --colorfour: #ffd6a4;
+  --main_p: #e94560;
+  --font: "Cairo", sans-serif;
+}
+*,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font);
+  background-image: url("../assets/images/bg.png");
+  background-size: cover;
+}
+
+body {
+  direction: rtl;
+  overflow-x: hidden;
+  background-color: var(--first_color);
+  color: var(--colortwo);
+}
+
+body::-webkit-scrollbar,
+.mainbg::-webkit-scrollbar {
+  background-color: transparent;
+  width: 15px;
+}
+
+body::-webkit-scrollbar-thumb,
+.mainbg::-webkit-scrollbar-thumb {
+  background: var(--first_color);
+  border-radius: 30px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--colortwo);
+}
+
+a:hover {
+  color: var(--colorthree);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 30px 0;
+}
+.logo {
+  width: 200px;
+  text-align: center;
+  color: var(--colortwo);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.logo > img {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
+form {
+  width: 100%;
+}
+
+input {
+  outline: none;
+  border: none;
+  width: inherit;
+  background-color: transparent;
+  caret-color: var(--colortwo);
+  color: var(--colortwo);
+  width: 100%;
+}
+
+input::placeholder {
+  color: #eeeeee93;
+}
+
+legend {
+  float: none;
+  width: fit-content;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+  line-height: inherit;
+}
+
+fieldset {
+  width: 40%;
+  margin: 20px auto;
+  padding: 0px 25px 10px 0px;
+  border: 2px solid #eeeeee93;
+}
+
+button {
+  display: block;
+  border-radius: 2rem;
+  border: none;
+  padding: 0.55rem 1.3rem;
+  margin-top: 1rem;
+  background-color: #cc7b1e;
+  font-size: 20px;
+  font-family: var(--font);
+  font-weight: bold;
+  color: #fff;
+  margin: 1rem auto;
+}

@@ -1,0 +1,311 @@
+:root {
+  --font: "Cairo", sans-serif;
+  --secfont: "Cairo Play", sans-serif;
+  --color: #212529;
+  --border-left: #0000003d;
+  --hover: #00000054;
+  --textColor: black;
+  --backgroundBox: #fff;
+  --ulbg: #eee;
+  --goldenColor: #a7651a;
+  --borderColor: #cc7b1e;
+  --mainColor: #fff;
+}
+* {
+  direction: rtl;
+}
+th {
+  font-family: var(--secfont);
+}
+body {
+  direction: rtl;
+  overflow-x: hidden;
+}
+body,
+body .row .col-3 ul,
+.list-group-item,
+.modal-content {
+  background-color: var(--backgroundBox);
+  color: var(--textColor);
+}
+.list-group-item a {
+  color: var(--textColor);
+}
+.dropdown-item,
+table {
+  color: var(--textColor) !important;
+}
+body .row .col-9 .row .col-4 {
+  background-color: var(--borderColor);
+  color: var(--backgroundBox);
+}
+body .row .col-9 .row .col-4 i {
+  color: var(--backgroundBox);
+}
+body .row .col-3 ul li:hover a,
+body .row .col-3 ul li.mactive a {
+  color: var(--goldenColor);
+}
+.list-group-item {
+  border-color: var(--goldenColor);
+}
+
+body .row {
+  --bs-gutter-x: 0 !important;
+  --bs-gutter-y: 0;
+}
+body .row .col-3 {
+  height: 100vh;
+  padding: 0.25rem 0;
+  border-left: 1px solid var(--border-left);
+  position: fixed;
+  right: 0;
+  top: 0;
+  overflow-y: hidden;
+}
+body .row .col-3 img {
+  width: 6.8rem;
+}
+body::-webkit-scrollbar,
+.table-responsive::-webkit-scrollbar,
+body .row .col-3 ul:not(.dropdown-menu)::-webkit-scrollbar {
+  background-color: transparent;
+  width: 15px;
+}
+
+body::-webkit-scrollbar-thumb,
+.table-responsive::-webkit-scrollbar-thumb {
+  background: var(--borderColor);
+  border-radius: 30px;
+}
+
+body .row .col-3 h1 {
+  margin: 0.5rem 0rem;
+  font-size: calc(1.375rem + 0.5vw);
+  font-family: var(--secfont);
+}
+body .row .col-3 ul:not(.dropdown-menu) {
+  height: 63.4vh;
+  padding-right: 0rem;
+  overflow-y: auto;
+  width: 80%;
+}
+.dropdown-menu {
+  background-color: var(--ulbg) !important;
+}
+
+body .row .col-3 ul li:not(.dropdown-item) {
+  padding: 15px 0 14px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  font-weight: bold;
+}
+
+body .row .col-3 ul li span {
+  font-family: var(--secfont);
+  font-size: 1.45rem;
+  font-weight: 400;
+}
+body .row .col-3 button {
+  border-radius: 2rem;
+  border: none;
+  padding: 0.55rem 1rem;
+  margin-top: 1rem;
+  background-color: var(--borderColor);
+  position: fixed;
+  bottom: 11px;
+}
+body .row .col-3 button span {
+  margin-right: 1rem;
+  font-family: var(--font);
+  font-weight: bold;
+  color: var(--mainColor);
+  font-size: 20px;
+}
+body .row .col-3 button i {
+  color: var(--mainColor);
+  font-size: 14px;
+}
+body .row .col-9 .d-flex h2:first-child {
+  font-family: var(--secfont);
+}
+body .row .col-9 .d-flex h2 {
+  font-family: var(--font);
+}
+body .row .col-9 .d-flex .button {
+  border-radius: 2rem;
+  color: var(--mainColor);
+  background: var(--borderColor);
+  border: none;
+  padding: 0.55rem 1rem;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: var(--font);
+}
+body .row .col-9 .row {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+body .row .col-9 .row .col-4 {
+  border-radius: 1rem;
+
+  width: 27.333%;
+}
+body .row .col-9 .row .col-4 i {
+  padding-right: 1rem;
+  font-size: 1.9rem;
+  padding-top: 0.5rem;
+}
+body .row .col-9 .row .col-4 span {
+  font-size: 1.5rem;
+  font-family: var(--secfont);
+  font-weight: bold;
+}
+table.dataTable thead th,
+table.dataTable thead td,
+table.dataTable tfoot th,
+table.dataTable tfoot td {
+  text-align: center !important;
+}
+.old {
+  color: red;
+}
+.middleaged {
+  color: blue;
+}
+.young {
+  color: green;
+}
+.dataTables_wrapper .dataTables_length {
+  float: right !important;
+}
+.form-select {
+  background-position: right 2.3rem center !important;
+  width: 4rem !important;
+  margin-right: 7px !important;
+  padding: 0.375rem 0.75rem 0.375rem 2.25rem !important;
+}
+label {
+  display: flex !important;
+}
+#example_filter label {
+  justify-content: end;
+}
+.pagination {
+  justify-content: end;
+}
+.form-control {
+  width: 12rem !important;
+  margin-right: 7px !important;
+}
+#example_info {
+  margin-right: 12px;
+}
+.btn-secondary {
+  color: var(--color) !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+btn-check:focus + .btn-secondary,
+.btn-secondary:focus {
+  color: var(--textColor);
+  background-color: transparent;
+  border-color: transparent !important;
+  box-shadow: 0 0 0 0 transparent !important;
+}
+.modal .btn {
+  line-height: 0 !important;
+  padding: 0 0 !important;
+  font-weight: bolder !important;
+}
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+  color: var(--textColor) !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: 0 0 0 0 transparent !important;
+}
+.btn-check:focus + .btn,
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0 transparent !important;
+  border-color: transparent !important;
+}
+.btn-primary {
+  color: var(--textColor) !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+.form-control:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0 transparent !important;
+  border-color: var(--borderColor) !important;
+  margin-bottom: 3px;
+}
+.form-select:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0 transparent !important;
+  border-color: var(--borderColor) !important;
+}
+.input-group-text {
+  margin-bottom: 3px;
+  width: 79px;
+}
+.form-control {
+  margin-bottom: 3px;
+}
+.page-item.active .page-link {
+  z-index: 3;
+  color: var(--mainColor) !important;
+  background-color: var(--borderColor) !important;
+  border-color: var(--goldenColor) !important;
+}
+.page-link {
+  color: var(--borderColor) !important;
+}
+.page-link:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0 transparent !important;
+}
+.modal-body {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: var(--secfont);
+}
+.modal-footer {
+  border-top: 0;
+  justify-content: center;
+}
+.modal-footer .btn {
+  border-radius: 50%;
+}
+.modal-footer .btn i {
+  border-radius: 50%;
+  font-size: 30px;
+  padding: 10px 13px;
+}
+.dropdown-item {
+  font-family: var(--secfont);
+  font-weight: bold;
+}
+.modal .form-select {
+  background-position: right 0.6rem center !important;
+  width: 100% !important;
+  margin-right: 0 !important;
+  padding: 0.375rem 2.25rem 0.375rem 0.75rem !important;
+}
+.modal .form-control {
+  width: 100% !important;
+  margin-right: 0 !important;
+}
+.addwidgetform h2 {
+  font-family: var(--secfont);
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.addwidgetinput {
+  min-width: 300px;
+  margin-right: 0 !important;
+}

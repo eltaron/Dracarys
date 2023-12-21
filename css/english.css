@@ -1,0 +1,12 @@
+body {
+  direction: ltr;
+  text-align: left;
+}
+body .row .col-3 {
+  position: fixed;
+  right: auto;
+  left: 0;
+}
+.row.justify-content-end {
+  justify-content: start !important;
+}
